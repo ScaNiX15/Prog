@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Online scholarship</title>
+</head>
+<body>
+    <div class="log">
+        <div class="main-flex">
+           
+             <img class="logo" src="/imgaes/Logo/360_F_228297371_6hzmQMkuewN7V2CuksdSbOIvcNVXRdoO.jpg" alt="">
+         </div>         
+                <nav class="nav">
+                    <div class="flex-left">
+                        <a href="#" class="main-menu"><i class="fa-solid fa-house"></i> Home</a>
+                        <a href="#" class="main-menu"><i class="fa-solid fa-arrow-up-right-from-square"></i> Mission and Vision</a>
+                        <a href="#" class="main-menu"><i class="fa-brands fa-accusoft"></i> Programmes</a>
+                    </div>
+                    
+                    <div class="flex-rigth">
+                        <div class="flex-rigth_1">
+                            <a href="#" class="main-menu"><i class="fa-solid fa-clipboard-check"></i> <button class="loginbtn" onclick="document.getElementById('login-form').style.display='block'" style="width: auto; background:transparent; border:0; color: white;">Login & Sign Up </button></a>
+                        </div>
+                        <div class="social-media">
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-solid fa-camera"></i>
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </div>
+                    </div>
+                    
+
+                </nav>
+             </div>
+        </div>
+    </div> 
+    <div id="login-form" class="login-section">
+        <div class="form-box">
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" onclick="login()" class="toggle-btn">Log In</button>
+                    <button type="button" onclick="Register()" class="toggle-btn">Register</button>
+                </div>
+                <!-- creating a login form -->
+                <form id="login" class="input-group-login">
+                    <input type="text" class="input-field" placeholder="Enter ID" required>
+                    <input type="password" class="input-field" placeholder="Enter Password" required>
+                    <input type="checkbox" class="check-box"><span>Remember Password</span>
+                    <button type="Submit" class="Submit-btn">Log in</button>
+                </form>
+            <!-- Creating a registration form -->
+            <form id="register" class="input-group-register">
+                <input type="text" class="input=field" placeholder="First Name" required>
+                <input type="text" class="input=field" placeholder="Last Name" required>
+                <input type="email" class="input-field" placeholder="Email ID" required>
+                <input type="password" class="input-field" placeholder="Email Password" required>
+                <input type="password" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box" ><span>I agree to the terms and conditions</span>
+                <button type="submit" class="Submit-btn">Register</button>
+             </form>
+        </div>
+    </div>
+    <script>
+        var x= document.getElementById('register');
+        var y= document.getElementById('login');
+        var z=bdocument.getElementById('btn');
+
+        function login()
+         {
+            x.style.left='-400px'
+            y.style.left='50px'
+            z.style.left='110px'
+        }
+        function Register()
+            {
+                x.style.left='50px'
+                y.style.left='450px'
+                z.style.left='0px'
+            }
+        
+    </script>
+    <script>
+        var modal= document.getElementById('login-section');
+        window.onclick = function(event)
+        {
+            if(event.target == modal)
+            {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+
+    <div class="content-main1">
+        <h1>Start Your Journey</h1>
+            <h1>at Graduate Academy</h1>
+    </div>
+                              
+</body>
+</html>
